@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="allHeight">
     <router-view/>
   </div>
 </template>
@@ -11,7 +11,23 @@ export default {
 </script>
 
 <style>
-#app {
-
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+.allHeight{
+  height: 100%;
+}
+.positionHead{
+  position: relative;
+}
+.positionLocal{
+  position: absolute;
+  left: 0;
+  top:0;
 }
 </style>
