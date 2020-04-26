@@ -3,15 +3,14 @@
       <el-row class="allHeight">
         <el-col :span="24" class="allHeight positionHead">
           <div id="bg-box" class="allHeight positionLocal"></div>
-        </el-col>
-        <el-col :span="8">
-
+          <loginBox></loginBox>
         </el-col>
       </el-row>
     </div>
 </template>
 
 <script>
+    import loginBox from "./componentsOwn/loginBox";
     export default {
         name: "login",
         data(){
@@ -21,6 +20,9 @@
         },
         methods:{
 
+        },
+        components:{
+          loginBox:loginBox
         },
         mounted() {
 
