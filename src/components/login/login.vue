@@ -25,7 +25,6 @@
           loginBox:loginBox
         },
         mounted() {
-
         }
     }
 </script>

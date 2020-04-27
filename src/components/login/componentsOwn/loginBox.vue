@@ -1,10 +1,11 @@
 <template>
     <div class="box-position">
-        <p>12312312321</p>
+        <p>{{username}}</p>
     </div>
 </template>
 
 <script>
+    import {mapGetters,mapActions} from 'vuex';
     export default {
         name: "loginBox",
         data(){
@@ -13,9 +14,14 @@
             }
         },
         methods:{
-
+          ...mapActions(["changeUserName"])
+        },
+        computed: {
+          ...mapGetters(["username"])
         },
         mounted() {
+            var _this = this;
+            _this.changeUserName('222')
         }
     }
 </script>
