@@ -4,7 +4,7 @@ import login from '@/components/login/login';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -13,3 +13,11 @@ export default new Router({
     }
   ]
 })
+router.beforeEach((to,form,next) => {
+  if(to.path==='/login'){
+    next()
+  }else {
+
+  }
+})
+export default router;
