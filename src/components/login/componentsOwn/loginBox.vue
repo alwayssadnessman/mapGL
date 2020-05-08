@@ -1,6 +1,6 @@
 <template>
     <div class="box-position">
-        <p>{{username}}</p>
+        <p>{{username}}1</p>
     </div>
 </template>
 
