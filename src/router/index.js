@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import index from '@/components/index/index';
 import login from '@/components/login/login';
 import mapGL from '@/components/mapGL/mapGL';
+import mapGLm from '@/components/mapGLN/mapGLm';
 
 Vue.use(Router);
 
@@ -21,6 +22,10 @@ const router = new Router({
       path: '/map',
       name: 'mapGL',
       component: mapGL
+    },{
+      path: '/mapGLN',
+      name: 'mapGLN',
+      component: mapGLm
     }
   ]
 })
