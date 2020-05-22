@@ -298,7 +298,8 @@
                             name: '多边形',
                             polygon: {
                                 hierarchy: [],
-                                perPositionHeight: true,
+                                height:5000,
+                                // perPositionHeight: true,
                                 material: Cesium.Color.RED.withAlpha(0.4)
                             }
                         };
